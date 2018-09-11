@@ -7,7 +7,6 @@ if(!exists("SCC")){
 
 library(ggplot2)
 
-# 24510 is Baltimore, see plot2.R
 subsetNEI  <- NEI[NEI$fips=="24510", ]
 
 aggregatedTotalByYearAndType <- aggregate(Emissions ~ year + type, subsetNEI, sum)
